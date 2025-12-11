@@ -1,5 +1,5 @@
-# Use OpenJDK 21 as the base image
-FROM openjdk:21
+# Use Eclipse Temurin 21 as the base image (successor to AdoptOpenJDK)
+FROM eclipse-temurin:21-jdk
 
 # Set the working directory
 WORKDIR /app
