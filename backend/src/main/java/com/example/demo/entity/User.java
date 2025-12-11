@@ -17,6 +17,10 @@ public class User {
     private String profession;
     private String linkedin_url;
     private String github_url;
+
+    private String resetToken;
+
+    private Long resetTokenExpiry;
     
     public String getDob() {
 		return dob;
@@ -128,5 +132,19 @@ public class User {
 		this.phno = phno;
 	}
 
-}
+    public String getResetToken() {
+        return resetToken;
+    }
 
+    public void setResetToken(String resetToken) {
+        this.resetToken = resetToken;
+    }
+
+    public Long getResetTokenExpiry() {
+        return resetTokenExpiry;
+    }
+
+    public void setResetTokenExpiry(Long resetTokenExpiry) {
+        this.resetTokenExpiry = resetTokenExpiry;
+    }
+}

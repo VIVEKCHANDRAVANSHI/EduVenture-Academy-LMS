@@ -41,7 +41,7 @@ public class QuestionController {
 
         return new ResponseEntity<>("Question added successfully", HttpStatus.CREATED);
     }
-    
+
     @GetMapping("/{courseId}")
     public ResponseEntity<List<Questions>> getAllQuestionsForCourse(@PathVariable Long courseId) {
         Course course = courseRepository.findById(courseId).orElse(null);

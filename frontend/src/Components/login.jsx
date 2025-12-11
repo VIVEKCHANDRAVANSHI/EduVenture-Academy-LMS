@@ -90,6 +90,10 @@ function Login() {
             Don't have an account? Register
             <Link to="/register"> Here</Link>
           </span>
+          <br />
+          <span>
+            <Link to="/forgot-password">Forgot Password?</Link>
+          </span>
         </div>
       </div>
     </div>

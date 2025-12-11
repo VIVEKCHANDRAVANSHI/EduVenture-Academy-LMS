@@ -39,14 +39,14 @@ function Home() {
             learning experience arranges coursework into a series of modules and
             lessons that can include videos, text notes, and assessment tests.
           </p>
-          <div className="btn">
-            <a className="blue" href="#">
-              Learn More
-            </a>
-            <a className="yellow" href="#">
-              Visit Courses
-            </a>
-          </div>
+            <div className="btn">
+              <Link className="blue" to="/courses">
+                Learn More
+              </Link>
+              <Link className="yellow" to="/courses">
+                Visit Courses
+              </Link>
+            </div>
         </section>
         <section id="features">
           <h1>Awesome Features</h1>
@@ -197,9 +197,9 @@ function Home() {
               <input type="password" placeholder="Password" name="" id="" />
               <input type="number" placeholder="Phone Number" name="" id="" />
               <div className="btn">
-                <a className="yellow" href="#">
-                  Submit Form
-                </a>
+              <button className="yellow" onClick={() => alert('Form submission not implemented yet')}>
+                Submit Form
+              </button>
               </div>
             </div>
           ) : (
